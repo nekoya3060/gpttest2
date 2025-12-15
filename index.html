@@ -2,65 +2,161 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>白井市公式サイト</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="千葉県白井市の公式情報サイト。くらし・行政・観光・防災情報を分かりやすく掲載しています。">
+  <title>白井市公式サイト｜くらし・行政・防災情報</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="千葉県白井市の公式情報サイト。市政情報、くらしの手続き、子育て、防災、観光、事業者向け情報を掲載しています。">
   <link rel="stylesheet" href="aaa.css">
 </head>
 
 <body>
 
+<a class="skip-link" href="#main">本文へスキップ</a>
+
 <header class="site-header">
-  <div class="header-inner">
-    <h1 class="logo">白井市</h1>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="#">くらし・手続き</a></li>
-        <li><a href="#">市政情報</a></li>
-        <li><a href="#">観光・文化</a></li>
-        <li><a href="#">防災・安全</a></li>
-        <li><a href="#">事業者向け</a></li>
-      </ul>
+  <div class="header-top">
+    <p>文字サイズ：
+      <button>小</button>
+      <button>中</button>
+      <button>大</button>
+    </p>
+    <nav class="utility-nav">
+      <a href="#">English</a>
+      <a href="#">中文</a>
+      <a href="#">한국어</a>
+      <a href="#">やさしい日本語</a>
     </nav>
   </div>
+
+  <div class="header-main">
+    <h1 class="logo">白井市</h1>
+    <form class="search-box">
+      <input type="search" placeholder="サイト内検索">
+      <button>検索</button>
+    </form>
+  </div>
+
+  <nav class="global-nav">
+    <ul>
+      <li><a href="#">くらし・手続き</a></li>
+      <li><a href="#">子育て・教育</a></li>
+      <li><a href="#">健康・福祉</a></li>
+      <li><a href="#">防災・安全</a></li>
+      <li><a href="#">観光・文化</a></li>
+      <li><a href="#">市政情報</a></li>
+      <li><a href="#">事業者向け</a></li>
+    </ul>
+  </nav>
 </header>
 
-<main>
+<main id="main">
 
+  <!-- ヒーロー -->
   <section class="hero">
-    <h2>未来へつながる しろい</h2>
-    <p>人と自然が調和する、住み続けたいまち</p>
+    <div class="hero-text">
+      <h2>人と自然が調和するまち 白井</h2>
+      <p>安心して暮らし、働き、子どもを育てられるまちを目指して</p>
+    </div>
   </section>
 
+  <!-- 緊急情報 -->
+  <section class="emergency">
+    <h2>⚠ 緊急情報</h2>
+    <p>現在、発表されている緊急情報はありません。</p>
+  </section>
+
+  <!-- お知らせ -->
   <section class="news">
     <h2>お知らせ</h2>
-    <ul class="news-list">
-      <li><time>2025/04/01</time> 市役所開庁時間変更のお知らせ</li>
-      <li><time>2025/03/25</time> 子育て支援制度のご案内</li>
-      <li><time>2025/03/10</time> 防災訓練実施について</li>
+    <ul>
+      <li><time>2025/04/01</time> 令和7年度 市役所組織改編について</li>
+      <li><time>2025/03/28</time> マイナンバーカード関連手続きの混雑状況</li>
+      <li><time>2025/03/20</time> 白井市職員採用試験の実施について</li>
+      <li><time>2025/03/10</time> 春の全国火災予防運動のお知らせ</li>
+    </ul>
+    <a class="more-link" href="#">一覧を見る</a>
+  </section>
+
+  <!-- 目的別 -->
+  <section class="purpose">
+    <h2>目的から探す</h2>
+    <div class="purpose-grid">
+      <a href="#">引っ越し・住民登録</a>
+      <a href="#">結婚・離婚</a>
+      <a href="#">出産・子育て</a>
+      <a href="#">学校・教育</a>
+      <a href="#">高齢者・介護</a>
+      <a href="#">健康・医療</a>
+      <a href="#">税金・保険</a>
+      <a href="#">ごみ・リサイクル</a>
+      <a href="#">ペット</a>
+      <a href="#">防災・災害</a>
+      <a href="#">道路・交通</a>
+      <a href="#">水道・下水道</a>
+    </div>
+  </section>
+
+  <!-- ライフイベント -->
+  <section class="life-events">
+    <h2>ライフイベント</h2>
+    <ul>
+      <li>妊娠・出産</li>
+      <li>子どもの成長</li>
+      <li>就職・退職</li>
+      <li>引っ越し</li>
+      <li>病気・けが</li>
+      <li>高齢期</li>
+      <li>死亡・相続</li>
     </ul>
   </section>
 
-  <section class="services">
-    <h2>目的別サービス</h2>
-    <div class="service-grid">
-      <a href="#" class="service-card">転入・転出</a>
-      <a href="#" class="service-card">子育て・教育</a>
-      <a href="#" class="service-card">健康・福祉</a>
-      <a href="#" class="service-card">税金・年金</a>
-      <a href="#" class="service-card">ごみ・環境</a>
-      <a href="#" class="service-card">防災情報</a>
+  <!-- 市政情報 -->
+  <section class="city-info">
+    <h2>市政情報</h2>
+    <div class="city-grid">
+      <div>
+        <h3>市の概要</h3>
+        <p>人口、面積、沿革、都市計画など白井市の基本情報を掲載。</p>
+      </div>
+      <div>
+        <h3>市長の部屋</h3>
+        <p>市長メッセージ、記者会見、市長交際費。</p>
+      </div>
+      <div>
+        <h3>議会</h3>
+        <p>議会日程、議員名簿、会議録。</p>
+      </div>
+      <div>
+        <h3>計画・施策</h3>
+        <p>総合計画、個別計画、施策評価。</p>
+      </div>
     </div>
+  </section>
+
+  <!-- 観光 -->
+  <section class="tourism">
+    <h2>観光・文化</h2>
+    <p>自然、歴史、イベント、特産品など白井市の魅力をご紹介します。</p>
   </section>
 
 </main>
 
 <footer class="site-footer">
-  <div class="footer-inner">
-    <p>〒270-1492 千葉県白井市復1123</p>
-    <p>TEL：047-492-1111</p>
-    <small>© Shiroi City. All Rights Reserved.</small>
+  <div class="footer-nav">
+    <div>
+      <h4>白井市役所</h4>
+      <p>〒270-1492 千葉県白井市復1123</p>
+      <p>TEL：047-492-1111</p>
+    </div>
+    <div>
+      <h4>関連リンク</h4>
+      <ul>
+        <li><a href="#">個人情報保護</a></li>
+        <li><a href="#">著作権・免責事項</a></li>
+        <li><a href="#">アクセシビリティ方針</a></li>
+      </ul>
+    </div>
   </div>
+  <small>© Shiroi City</small>
 </footer>
 
 </body>
